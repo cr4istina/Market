@@ -9,7 +9,7 @@ public class Item {
     }
 
     void displayDetail() {
-        System.out.println("The name: " + name + ";");
-        System.out.println("The price: " + price + ";");
+        System.out.print("The name: " + name + ", ");
+        System.out.println("price: " + price + ";");
     }
 }

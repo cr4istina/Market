@@ -11,9 +11,10 @@ public class Market {
 
     void displayItems() {
         System.out.println(marketName);
+        System.out.println("For now we have the specials:");
         for (int i = 0; i < itemsLength; i++) {
             if (items[i] != null) {
-                System.out.println("Name: " + items[i].name + "; Price: " + items[i].price);
+                items[i].displayDetail();
             }
         }
     }

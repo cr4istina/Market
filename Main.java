@@ -7,18 +7,18 @@ public class Main {
         System.out.println("Welcome to the Market!");
         Market market = new Market();
         market.marketName = " - - - Choose your Choice - - - ";
-        System.out.println("For the BLACK FRIDAY, we've got:");
         market.items = new Item[20];
         market.addItem(item);
         market.addItem(item1);
         market.addItem(item2);
         market.displayItems();
 
-        System.out.println("The most expensive items is: ");
+        System.out.print("The most expensive item is ");
         System.out.println(MarketManager.biggestPrice(market));
         System.out.println(MarketManager.averagePrice(market));
 
-        MarketManager.replaceItem(market, new Item("Blue T-Shirt", 45.5), 3);
+        MarketManager.replaceItem(market, new Item("Skull T-Shirt", 45.5), 3);
+        System.out.println("Hope you enjoyed being with us!  :) ");
 
     }
 }
